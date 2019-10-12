@@ -221,24 +221,9 @@ const Teaser = props => {
               h1 {
                 color: ${theme.blog.h1.hoverColor};
               }
-              :global(.arrow) {
-                opacity: 1;
-                stroke: ${theme.color.special.attention};
-                transform: translateX(0);
-              }
             }
             :global(.gatsby-image-wrapper) {
               transition: all ${theme.time.duration.default};
-            }
-            :global(.arrow) {
-              display: inline-block;
-              fill: ${theme.color.special.attention};
-              stroke: ${theme.color.special.attention};
-              stroke-width: 40;
-              stroke-linecap: round;
-              opacity: 0;
-              transition: all 0.5s;
-              transform: translateX(-50%);
             }
           }
         }
