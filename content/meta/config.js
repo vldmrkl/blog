@@ -2,7 +2,7 @@ module.exports = {
   siteTitle: 'Volodymyr Klymenko', // <title>
   shortSiteTitle: 'Volodymyr Klymenko', // <title> ending for posts and pages
   siteDescription: 'Volodymyr Klymenko',
-  siteUrl: '',
+  siteUrl: 'https://klymenko.com',
   // pathPrefix: "",
   siteImage: 'preview.jpg',
   siteLanguage: 'en',
