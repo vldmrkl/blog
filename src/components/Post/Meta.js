@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import { currDate } from '../../utils/helpers';
-import { FaUser, FaTag, FaCalendar } from 'react-icons/fa/';
+import { FaUser, FaCalendar } from 'react-icons/fa/';
 
 const Meta = props => {
-  const { author: authorName, tags, theme, lastEdit } = props;
+  const { author: authorName, theme, lastEdit } = props;
   const prefix =
     props.prefix ||
     currDate(); /* Intent: get date placeholder for viewing drafts. */
@@ -17,22 +17,6 @@ const Meta = props => {
       <span>
         <FaCalendar size={18} /> {prefix}
       </span>
-
-      {/* <span>
-        <FaUser size={18} /> {authorName}
-      </span> */}
-
-      {tags &&
-        tags.map(tag => (
-          <span key={tag}>
-            <Link to={`/tag/${tag.split(' ').join('-')}`}>
-              <span>
-                <FaTag size={18} />
-                {tag}
-              </span>
-            </Link>
-          </span>
-        ))}
 
       {/* --- STYLES --- */}
       <style jsx>{`
@@ -82,7 +66,6 @@ const Meta = props => {
 };
 
 Meta.propTypes = {
-  tags: PropTypes.array,
   theme: PropTypes.object.isRequired,
 };
 

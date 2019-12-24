@@ -17,7 +17,6 @@ const blogPostTeaserFields = `
             }
             frontmatter {
                 title
-                tags
                 cover {
                     children {
                         ... on ImageSharp {

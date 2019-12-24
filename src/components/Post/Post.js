@@ -14,7 +14,7 @@ const Post = props => {
       html,
       htmlAst,
       fields: { prefix, slug },
-      frontmatter: { title, author, tags },
+      frontmatter: { title, author },
       parent: { modifiedTime },
     },
     authornote,
@@ -31,7 +31,6 @@ const Post = props => {
           prefix={prefix}
           lastEdit={modifiedTime}
           author={author}
-          tags={tags}
           theme={theme}
         />
       </header>

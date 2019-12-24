@@ -25,10 +25,8 @@ const Seo = props => {
         prefix: 'og: http://ogp.me/ns#',
       }}
     >
-      {/* General tags */}
       <title>{title}</title>
       <meta name="description" content={description} />
-      {/* OpenGraph tags */}
       <meta property="og:url" content={url} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />

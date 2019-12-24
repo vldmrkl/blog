@@ -1,6 +1,5 @@
 import { FaArrowRight } from 'react-icons/fa/';
 import { FaCalendar } from 'react-icons/fa/';
-import { FaTag } from 'react-icons/fa/';
 import { FaUser } from 'react-icons/fa/';
 import Picture from 'gatsby-image';
 import { Link } from 'gatsby';
@@ -15,7 +14,6 @@ const Teaser = props => {
       fields: { slug, prefix },
       frontmatter: {
         title,
-        tags,
         author,
         cover: {
           children: [{ fluid }],
@@ -39,15 +37,6 @@ const Teaser = props => {
             <span>
               <FaCalendar size={18} /> {prefix}
             </span>
-            {/* <span>
-              <FaUser size={18} /> {author}
-            </span> */}
-            {tags &&
-              tags.map(tag => (
-                <span key={tag}>
-                  <FaTag size={18} /> {tag}
-                </span>
-              ))}
           </p>
           <p>{excerpt}</p>
         </Link>
