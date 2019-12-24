@@ -12,7 +12,7 @@ const Headline = props => {
       <style jsx>{`
         h1 {
           font-size: ${theme.font.size.xxl};
-          margin: ${theme.space.stack.l};
+          margin: ${theme.space.stack.m};
           animation-name: headlineEntry;
           animation-duration: 0;
           color: ${theme.color.neutral.gray.j};

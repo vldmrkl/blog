@@ -5,18 +5,22 @@ import { currDate } from '../../utils/helpers';
 import { FaUser, FaCalendar } from 'react-icons/fa/';
 
 const Meta = props => {
-  const { author: authorName, theme, lastEdit } = props;
-  const prefix =
-    props.prefix ||
-    currDate(); /* Intent: get date placeholder for viewing drafts. */
+  const { theme, prefix } = props;
 
-  //TODO: lastEdit
+  const dateFormatOptions = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  };
+
+  const formattedDate = new Date(prefix || currDate()).toLocaleDateString(
+    'en-US',
+    dateFormatOptions,
+  );
 
   return (
     <p className="meta">
-      <span>
-        <FaCalendar size={18} /> {prefix}
-      </span>
+      {formattedDate}
 
       {/* --- STYLES --- */}
       <style jsx>{`
@@ -27,38 +31,6 @@ const Meta = props => {
           margin: ${theme.space.m} 0;
           background: transparent;
           color: ${theme.color.neutral.gray.j};
-
-          :global(svg) {
-            fill: ${theme.icon.color};
-            margin: ${theme.space.inline.xs};
-          }
-          span {
-            align-items: center;
-            display: flex;
-            text-transform: uppercase;
-            margin: ${theme.space.xs} ${theme.space.s} ${theme.space.xs} 0;
-          }
-        }
-        @from-width tablet {
-          .meta {
-            margin: ${`calc(${theme.space.m} * 1.5) 0 ${theme.space.m}`};
-          }
-        }
-        @media (hover: hover) {
-          .meta {
-            :global(a svg) {
-              transition: all 0.5s ease-in-out;
-              -webkit-transition: all 0.5s ease-in-out;
-              -moz-transition: all 0.5s ease-in-out;
-            }
-            :global(a:hover svg) {
-              transition: all 0.5s ease-in-out;
-              -webkit-transition: all 0.5s ease-in-out;
-              -moz-transition: all 0.5s ease-in-out;
-              transform: scale(1.3);
-              color: ${theme.color.brand.primary};
-            }
-          }
         }
       `}</style>
     </p>
@@ -67,6 +39,7 @@ const Meta = props => {
 
 Meta.propTypes = {
   theme: PropTypes.object.isRequired,
+  prefix: PropTypes.Date,
 };
 
 export default Meta;

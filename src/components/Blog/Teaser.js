@@ -23,6 +23,17 @@ const Teaser = props => {
     index,
   } = props;
 
+  const dateFormatOptions = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  };
+
+  const formattedDate = new Date(prefix || currDate()).toLocaleDateString(
+    'en-US',
+    dateFormatOptions,
+  );
+
   return (
     <React.Fragment>
       <li>
@@ -33,11 +44,7 @@ const Teaser = props => {
           <h1>
             {title} <FaArrowRight className="arrow" />
           </h1>
-          <p className="meta">
-            <span>
-              <FaCalendar size={18} /> {prefix}
-            </span>
-          </p>
+          <p className="meta">{formattedDate}</p>
           <p>{excerpt}</p>
         </Link>
       </li>
@@ -103,17 +110,6 @@ const Teaser = props => {
           font-size: 0.8em;
           padding: ${theme.space.m} ${theme.space.s};
           background: transparent;
-
-          :global(svg) {
-            fill: ${theme.icon.color};
-            margin: ${theme.space.inline.xs};
-          }
-          span {
-            align-items: center;
-            display: flex;
-            text-transform: uppercase;
-            margin: ${theme.space.xs} ${theme.space.s} ${theme.space.xs} 0;
-          }
         }
 
         p {
@@ -190,8 +186,8 @@ const Teaser = props => {
             padding: ${`calc(${theme.space.default} * 1.2) calc(${theme.space.default} * 2) 0`};
           }
           .meta {
-            padding: ${`calc(${theme.space.default} * 1.5) calc(${theme.space.default} * 2)
-              calc(${theme.space.default} * 0.5)`};
+            padding: ${`calc(${theme.space.default}) calc(${theme.space.default} * 2)
+              calc(${theme.space.default})`};
           }
           p {
             padding: ${`0 calc(${theme.space.default} * 2)`};
