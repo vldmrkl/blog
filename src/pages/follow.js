@@ -4,7 +4,7 @@ import theme from '../theme/theme.yaml';
 import Article from '../components/Article';
 import Headline from '../components/Article/Headline';
 import Seo from '../components/Seo';
-import { FaTag, FaRss, FaPaperPlane } from 'react-icons/fa';
+import { FaRss, FaPaperPlane } from 'react-icons/fa';
 import config from '../../content/meta/config';
 
 const FollowPage = props => {
@@ -29,7 +29,7 @@ const FollowPage = props => {
               </header>
               <p>Hear about new posts by either RSS or Email.</p>
 
-              <a href="../rss.xml" target="_blank">
+              <a href="../rss.xml" target="_blank" rel="noopener noreferrer">
                 <section className="subContainer">
                   <span className="subIcon">
                     <FaRss />
@@ -38,7 +38,7 @@ const FollowPage = props => {
                 </section>
               </a>
 
-              <a href={emailSubLink} target="_blank">
+              <a href={emailSubLink} target="_blank" rel="noopener noreferrer">
                 <section className="subContainer">
                   <span className="subIcon">
                     <FaPaperPlane />
