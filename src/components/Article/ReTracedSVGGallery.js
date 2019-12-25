@@ -50,7 +50,6 @@ const ReTracedSVGGallery = props => {
               <ReImg
                 key={`svggal${i}`}
                 fluid={item.node.childImageSharp.fluid}
-                hovereffect={true}
               />
             ))}
           </>

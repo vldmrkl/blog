@@ -28,14 +28,14 @@ const ReImg = props => {
 
   if (!props.hovereffect) {
     return (
-      <a href={href} target="_blank">
+      <a href={href} target="_blank" rel="noopener noreferrer">
         <Picture fluid={fluid} title={props.title} style={relativeStyle} />
       </a>
     );
   }
 
   return (
-    <a href={href} target="_blank">
+    <a href={href} target="_blank" rel="noopener noreferrer">
       <div className="imgContainer">
         <img src={fluid.tracedSVG} title={props.title} style={relativeStyle} />
         <Picture fluid={fluid} title={props.title} style={absoluteStyle} />
@@ -45,14 +45,6 @@ const ReImg = props => {
           position: relative;
           top: 0;
           left: 0;
-        }
-        @from-width desktop {
-          :global(picture) {
-            transition: 300ms ease-in-out;
-          }
-          :global(.imgContainer > .gatsby-image-wrapper > picture):hover {
-            opacity: 0;
-          }
         }
       `}</style>
     </a>
