@@ -1,6 +1,4 @@
-import PropTypes from 'prop-types';
 import React from 'react';
-import { graphql } from 'gatsby';
 import theme from '../theme/theme.yaml';
 import Article from '../components/Article';
 import Contact from '../components/Contact';

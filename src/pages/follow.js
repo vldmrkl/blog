@@ -5,7 +5,6 @@ import Article from '../components/Article';
 import Headline from '../components/Article/Headline';
 import Seo from '../components/Seo';
 import { FaRss, FaPaperPlane } from 'react-icons/fa';
-import config from '../../content/meta/config';
 
 const FollowPage = props => {
   return (

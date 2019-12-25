@@ -1,9 +1,7 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import theme from '../theme/theme.yaml';
 import Article from '../components/Article';
 import Headline from '../components/Article/Headline';
-import { graphql } from 'gatsby';
 
 const NotFoundPage = props => {
   return (
