@@ -15,7 +15,7 @@ class IndexPage extends React.Component {
             <ThemeContext.Consumer>
               {theme => (
                 <React.Fragment>
-                  <Seo pageTitle="Blog home" />
+                  <Seo />
                   <View
                     globalState={g}
                     pageContext={this.props.pageContext}
