@@ -49,16 +49,6 @@ class Header extends React.Component {
               <h2>{config.headerSubTitle}</h2>
             </div>
           </Link>
-          <ScreenWidthContext.Consumer>
-            {width => (
-              <Menu
-                path={path}
-                fixed={fixed}
-                screenWidth={width}
-                theme={theme}
-              />
-            )}
-          </ScreenWidthContext.Consumer>
         </header>
         <VisibilitySensor onChange={this.visibilitySensorChange}>
           <div className="sensor" />
