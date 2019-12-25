@@ -1,3 +1,4 @@
+import { currDate } from '../../utils/helpers';
 import { FaArrowRight } from 'react-icons/fa/';
 import { FaCalendar } from 'react-icons/fa/';
 import { FaUser } from 'react-icons/fa/';
