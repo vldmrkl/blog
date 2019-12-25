@@ -28,11 +28,6 @@ class View extends React.Component {
 
     return (
       <React.Fragment>
-        {/* Optional Hero section on first page. */}
-        {pageContext.currentPage == 1 && !theme.hero.hide && (
-          <Hero theme={theme} />
-        )}
-
         {/* Blog posts with infinite scroll. */}
         <InfiniteScroll
           throttle={300}

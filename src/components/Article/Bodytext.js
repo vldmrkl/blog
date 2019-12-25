@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import rehypeReact from 'rehype-react';
-import Icons from '../../components/About/WebPresenceIcons';
 import ReImg from './ReImg';
 import ReTracedSVGGallery from './ReTracedSVGGallery';
 import { Link } from 'gatsby';
@@ -9,7 +8,6 @@ import { Link } from 'gatsby';
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
-    're-icons': Icons,
     're-img': ReImg,
     're-link': Link,
     're-tracedsvg-gallery': ReTracedSVGGallery,
