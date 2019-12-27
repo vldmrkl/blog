@@ -124,7 +124,6 @@ module.exports = {
             options: {
               maxWidth: 800,
               backgroundColor: 'transparent',
-              tracedSVG: { color: '#f9ebd2' },
             },
           },
           {
@@ -132,11 +131,6 @@ module.exports = {
             options: {
               tag: 're-img',
               maxWidth: 800,
-              quality: 90,
-              webP: true,
-              toFormat: 'WEBP',
-              tracedSVG: { color: '#f9ebd2' },
-              generateTracedSVG: true,
             },
           },
 
