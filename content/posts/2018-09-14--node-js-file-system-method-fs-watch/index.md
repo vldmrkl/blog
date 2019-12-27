@@ -40,8 +40,9 @@ I call _fs.watch_ method with WATCH_TARGET (filename argument) and listener call
 It’s not a misprint. I have really got two messages, however, I saved my changes one time. I was curious about why it happened, so I did a research and found <a href="https://github.com/nodejs/node-v0.x-archive/issues/2054#issuecomment-8686322" target="_blank" rel="noopener noreferrer">the answer on GitHub</a>:<br/>
 `a write to a file triggers two kqueue events NOTE_EXTEND and NOTE_WRITE`
 
-In the <a href="https://nodejs.org/api/fs.html#fs_availability" target="_blank" rel="noopener noreferrer">documentation</a>, it is mentioned that:<br/>
-`On macOS, this uses kqueue(2) for files and FSEvents for directories.`
+In the <a href="https://nodejs.org/api/fs.html#fs_availability" target="_blank" rel="noopener noreferrer">documentation</a>, it is mentioned that:
+
+> On macOS, this uses kqueue(2) for files and FSEvents for directories.
 
 and it absolutely makes sense because I’m using macOS.
 
