@@ -52,6 +52,10 @@ const Bodytext = props => {
             line-height: ${theme.font.lineHeight.m};
           }
 
+          :global(img) {
+            max-width: 100%;
+          }
+
           :global(p) {
             font-size: ${theme.font.size.s};
             line-height: ${theme.font.lineHeight.xxl};
