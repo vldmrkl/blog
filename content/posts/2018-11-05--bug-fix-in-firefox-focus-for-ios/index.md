@@ -30,13 +30,13 @@ One of its feature is that if you don’t want to switch from Safari, you can st
 
 ## Bug
 
-The <a href="https://github.com/mozilla-mobile/focus-ios/issues/1523" target="_blank" rel="noopener noreferrer">issue</a> was that the search text in URL Bar mismatched the actual search after using back and forward navigation. Let’s go through an example:
-_1._ Search “the guardian”
-_2._ Search “mozilla”
-_3._ Press back
-_4._ Search “firefox”
-_5._ Press back
-_6._ **Search page shows** results for “**the guardian**” request, but URL Bar contains “**mozilla**” instead of “the guardian”.
+The <a href="https://github.com/mozilla-mobile/focus-ios/issues/1523" target="_blank" rel="noopener noreferrer">issue</a> was that the search text in URL Bar mismatched the actual search after using back and forward navigation. Let’s go through an example:<br />
+_1._ Search “the guardian”<br />
+_2._ Search “mozilla”<br />
+_3._ Press back<br />
+_4._ Search “firefox”<br />
+_5._ Press back<br />
+_6._ **Search page shows** results for “**the guardian**” request, but URL Bar contains “**mozilla**” instead of “the guardian”.<br />
 
 <img src="bug.gif" />
 
@@ -46,14 +46,14 @@ The author of the issue left a note there that the problem might be in `SearchHi
 
 I found class `SearchHistoryUtils`, which contains two boolean properties.
 
-_1._ `isFromURLBar`
-_2._ `isNavigating`
+_1._ `isFromURLBar`<br />
+_2._ `isNavigating`<br />
 
-and four functions:
-_1._ `pushSearchToStack(with searchedText: String)` — when user makes a new search request, this function pushes that search to the stack.
-_2._ `pullSearchFromStack() -> String?` — this function doesn’t pop search from stack, instead, it returns the value of current search text if present.
-_3._ `goForward()` — updates isCurrentSearch value for the stack’s objects.
-_4._ `goBack()` — same as #3
+and four functions: <br />
+_1._ `pushSearchToStack(with searchedText: String)` — when user makes a new search request, this function pushes that search to the stack.<br />
+_2._ `pullSearchFromStack() -> String?` — this function doesn’t pop search from stack, instead, it returns the value of current search text if present.<br />
+_3._ `goForward()` — updates isCurrentSearch value for the stack’s objects.<br />
+_4._ `goBack()` — same as #3<br />
 
 When I was analyzing the code, I dismissed `pullSearchFromStack`, `goForward`, and `goBack` functions because they didn’t really deal with stack changes. Therefore, I started debugging `pushSearchToStack` function. I debugged several test cases, and let’s take a look at my findings.
 <img src="2.png" />
@@ -66,10 +66,10 @@ So I pretty much reproduced the bug described in the issue, and I found the prob
 Let’s take a look at a chunk of the pseudo code of `pushSearchToStack` function:
 <img src="3.png" />
 
-_1._ Let’s take apart the code above:
-_2._ It declares an empty stack currentStack. It sets the value of currentStack to the value of global state searchedHistory value.
-_3._ Then, it goes through each search in the stack, and sets value of isCurrentSearch property to false.
-_4._ It adds the new search to the stack and sets its isCurrentSearch property to true.
+Let’s take apart the code above:<br />
+_1._ It declares an empty stack currentStack. It sets the value of currentStack to the value of global state searchedHistory value.<br />
+_2._ Then, it goes through each search in the stack, and sets value of isCurrentSearch property to false.<br />
+_3._ It adds the new search to the stack and sets its isCurrentSearch property to true.<br />
 
 So I played with the code a bit, and added a check whether the last search is the current search:
 <img src="4.png" />

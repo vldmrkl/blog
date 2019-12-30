@@ -18,11 +18,11 @@ If you search for mozilla and press the “Go” button, the URL Bar will contai
 <img src="1.gif" />
 
 ## Fix
-My strategy to fix this bug was:
-_1._ Find a function that is called on a search suggestion click.
-_2._ Debug this function and understand how it works.
-_3._ Find the code that sets the text to URL bar.
-_4._ Make changes to fix the bug.
+My strategy to fix this bug was:<br />
+_1._ Find a function that is called on a search suggestion click.<br />
+_2._ Debug this function and understand how it works.<br />
+_3._ Find the code that sets the text to URL bar.<br />
+_4._ Make changes to fix the bug.<br />
 
 Firefox Focus has a helpful document called <a href="https://github.com/mozilla-mobile/focus-ios/blob/master/Documentation/UI%20and%20Code%20Map.md" target="_blank" rel="noopener noreferrer">UI and Code Map</a> in their documentation. This document basically maps UI to the code, and it is very useful for new contributors who are not very familiar with the codebase of the project.
 

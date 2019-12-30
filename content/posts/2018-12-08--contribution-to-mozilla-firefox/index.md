@@ -23,7 +23,7 @@ I took an <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1508825" target=
 ## Set up
 First of all, I had to set up a project on my local machine. It was a new experience for me because Mozilla uses **Mercurial** as their primary source control tool (you can still use <a href="https://github.com/glandium/git-cinnabar/wiki/Mozilla:-A-git-workflow-for-Gecko-development" target="_blank" rel="noopener noreferrer">Git</a>, but it’s more tricky to set up). However, I found that Mercurial workflow and commands are very much like Git.
 
-I’m using macOS, and here are the instructions to set up Firefox on your macOS device:
+I’m using macOS, and here are the instructions to set up Firefox on your macOS device:<br />
 _1._ Install Mercurial:
 ```shell
 brew install mercurial
@@ -34,7 +34,7 @@ _2._ Get Firefox source code using Mercurial:
 hg clone https://hg.mozilla.org/mozilla-central
 ```
 
-**It took me about an hour to download it!**
+**It took me about an hour to download it!** <br />
 
 _3._ Install all dependencies and build the project:
 ```shell

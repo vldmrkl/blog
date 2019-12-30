@@ -20,12 +20,12 @@ First, for those of you who haven’t worked with VSCode before, let’s take a 
 
 <img src="2.png" />
 
-If you take a look at Activity Bar (A), there are 5 sections:
-_1._ File explorer
-_2._ Search
-_3._ Source Control
-_4._ Debugger
-_5._ Extensions
+If you take a look at Activity Bar (A), there are 5 sections:<br />
+_1._ File explorer<br />
+_2._ Search<br />
+_3._ Source Control<br />
+_4._ Debugger<br />
+_5._ Extensions<br />
 
 The filed issue is about Extensions part of the Activity Bar, and the requested the following feature:
 > It would be helpful if the search bar in the Extensions Side Bar maintained its value when reloading the window. (<a href="https://github.com/Microsoft/vscode/issues/64669#issue-388952784" target="_blank" rel="noopener noreferrer">issue description</a>)
@@ -33,9 +33,9 @@ The filed issue is about Extensions part of the Activity Bar, and the requested 
 ## Current behavior
 <img src="3.gif" />
 
-Steps to reproduce this bug:
-_1._ Type something in extensions search
-_2._ Reload window
+Steps to reproduce this bug:<br />
+_1._ Type something in extensions search<br />
+_2._ Reload window<br />
 
 After reloading window, the search bar has no value.
 

@@ -12,9 +12,9 @@ One week ago, I posted an article on how I started working on a bug in Microsoft
 The search bar in the extensions part doesn’t save the value if you reload the window.
 <img src="1.gif" />
 
-Steps to reproduce this bug:
-_1._ Type something in extensions search
-_2._ Reload window
+Steps to reproduce this bug:<br />
+_1._ Type something in extensions search<br />
+_2._ Reload window<br />
 
 After reloading the window, the search bar value has gone.
 

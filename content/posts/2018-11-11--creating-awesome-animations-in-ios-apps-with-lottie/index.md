@@ -30,9 +30,9 @@ Adobe After Effects (AE) is a fantastic piece of software that helps you to buil
 You can also find ready-to-use animations on <a href="https://lottiefiles.com/" target="_blank" rel="noopener noreferrer">LottieFiles</a>. For this tutorial, I am going to use a <a href="https://www.lottiefiles.com/2523-loading/" target="_blank" rel="noopener noreferrer">nice animation</a> I found there:
 <img src="1.gif" />
 
-Now, let’s use Lottie and integrate the animation above into the iOS app. It should take you less than 3 minutes!
-_1._ Create a single-view iOS application in Xcode.
-_2._ Install Lottie into your project.
+Now, let’s use Lottie and integrate the animation above into the iOS app. It should take you less than 3 minutes!<br />
+_1._ Create a single-view iOS application in Xcode.<br />
+_2._ Install Lottie into your project.<br />
 
 ### Cocoapods
 Add Lottie dependency to the podfile: `pod 'lottie-ios'`. Then, run `pod install`.

@@ -37,7 +37,7 @@ First of all, I had to set up the project on my machine. It wasn’t trivial for
 I had CocoaPods and Carthage installed already on my Mac, but I didn’t have Bundler, and I haven’t even heard about it.
 > Bundler provides a consistent environment for Ruby projects by tracking and installing the exact gems and versions that are needed. (retrieved from bundler.io)
 
-I have never touched Ruby before, so I had to set up Ruby environment in order to install Bundler. First, you need to install RVM (Ruby Version Manager). Here are the steps I used for installing it:
+I have never touched Ruby before, so I had to set up Ruby environment in order to install Bundler. First, you need to install RVM (Ruby Version Manager). Here are the steps I used for installing it:<br />
 
 _1._ Install GnuPG
 ```shell

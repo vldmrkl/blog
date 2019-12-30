@@ -48,9 +48,9 @@ All of the metrics above, we calculate using the vehicle’s information from Sm
 After architecture was done, we started prototyping the UI of a web app.
 <img src="2.png" />
 
-Samana and I worked on it, and we designed the following workflow:
-_1._ **Login page**. Here, the user would be prompted to authenticate themselves on the Smartcar Authorization Dialog
-_2._ In case of successful authorization, the vehicle’s data and environmental impact would be displayed on **the dashboard**.
+Samana and I worked on it, and we designed the following workflow:<br />
+_1._ **Login page**. Here, the user would be prompted to authenticate themselves on the Smartcar Authorization Dialog<br />
+_2._ In case of successful authorization, the vehicle’s data and environmental impact would be displayed on **the dashboard**.<br />
 
 Oh, we also gave our project a name! We called it **Green**icle. ️
 
@@ -73,8 +73,8 @@ I started implementing UI of our Login page. It didn’t take long to develop Lo
 
 Then I moved forward to the next step, which was the **Dashboard**. While our back-end was still in development, I was building a static version of the dashboard. _Because of limited time, I didn’t really try to write beautiful code; instead, I focused on writing code that works_. In order to save time, I also didn’t break UI into a component hierarchy. Most of the code I wrote was inside my page components: `Home.jsx` and `Dashboard.jsx`.
 
-The dashboard was supposed to have two main sections:
-_1._ Vehicle information section, which includes its make, model, year, total mileage, current location and estimated retail value.
+The dashboard was supposed to have two main sections:<br />
+_1._ Vehicle information section, which includes its make, model, year, total mileage, current location and estimated retail value.<br />
 _2._ Statistics section, which displays location timeline and mileage based on selected time filter (past 24 hours/past week), and environmental impact metrics.
 
 This is how the dashboard with static values looked like:
