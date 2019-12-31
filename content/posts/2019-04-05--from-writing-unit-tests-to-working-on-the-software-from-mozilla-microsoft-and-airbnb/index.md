@@ -56,9 +56,9 @@ Eventually, I submitted my changes, and they were also accepted! I literally had
 
 ## OSD700
 In the winter semester, I had an option to take OSD700 course, which is a second OSD course and includes more advanced contributions. I really enjoyed OSD600, so I registered for OSD700.
-I chose Firefox Focus for my first PR because I’d already known it, and I felt like it was a good project to start with. I noticed that the development of Focus was not as active as it used to be in Fall, so I had to pick up issues that were filed some time ago. I sent two PRs to Focus during this term:
-_1._ I went through the codebase and refactored it by moving magic numbers into a separate file. It was a good exercise which helped me to learn more about the codebase as I intended to do more development on this project in the future.
-_2._ I added UI tests. I’ve never done testing in iOS apps before, so I learned something new doing this contribution.
+I chose Firefox Focus for my first PR because I’d already known it, and I felt like it was a good project to start with. I noticed that the development of Focus was not as active as it used to be in Fall, so I had to pick up issues that were filed some time ago. I sent two PRs to Focus during this term:<br />
+_1._ I went through the codebase and refactored it by moving magic numbers into a separate file. It was a good exercise which helped me to learn more about the codebase as I intended to do more development on this project in the future.<br />
+_2._ I added UI tests. I’ve never done testing in iOS apps before, so I learned something new doing this contribution.<br />
 
 ## Microsoft VSCode
 As I mentioned above, the development of this project was not so active, so I decided to look for a new project I can contribute to. I felt confident enough, so I went to large organizations like Microsoft, Facebook, Google, etc.

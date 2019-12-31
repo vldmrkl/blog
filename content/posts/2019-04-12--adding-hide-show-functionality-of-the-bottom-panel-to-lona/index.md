@@ -14,7 +14,7 @@ The interface of Lona is really similar to Xcode’s interface, and it has three
 <img src="1.png" />
 
 ## Fix
-In order to fix this bug, I made the following steps:
+In order to fix this bug, I made the following steps:<br />
 _1._ In the `ComponentEditorViewController`, which contains the bottom panel, I wrote a new function that, basically, hides and shows the bottom panel depending on the value passed in the argument:
 ```swift
 private func setBottomItemVisibility(to visible: Bool) {
