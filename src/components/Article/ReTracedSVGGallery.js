@@ -26,9 +26,7 @@ const ReTracedSVGGallery = props => {
                     maxHeight: 360
                     cropFocus: CENTER
                     quality: 90
-                    traceSVG: { color: "#f9ebd2" }
                   ) {
-                    tracedSVG
                     aspectRatio
                     src
                     srcSet

@@ -20,8 +20,7 @@ const blogPostTeaserFields = `
                 cover {
                     children {
                         ... on ImageSharp {
-                            fluid(maxWidth: 800, maxHeight: 360, cropFocus: CENTER, quality: 90, traceSVG: { color: "#f9ebd2" }) {
-                                tracedSVG
+                            fluid(maxWidth: 800, maxHeight: 360, cropFocus: CENTER, quality: 90) {
                                 aspectRatio
                                 src
                                 srcSet
