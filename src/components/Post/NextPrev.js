@@ -70,6 +70,9 @@ const NextPrev = props => {
         .next-arrow {
           margin-left: 10px;
         }
+        .live-arrow {
+          margin-top: 5px;
+        }
         .links {
           display: flex;
           flex-direction: column;
