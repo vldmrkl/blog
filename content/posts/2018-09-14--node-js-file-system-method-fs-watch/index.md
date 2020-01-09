@@ -1,10 +1,10 @@
 ---
 title: 'Node.js File System Method: fs.watch'
-cover: node.png
+cover: cover.png
 author: Volodymyr Klymenko
 ---
 
-<re-img src="node.png"></re-img>
+<re-img src="cover.png"></re-img>
 
 I am going to look into the **watch** method of **Node fs** module. This method watches for changes in provided files or directories. Let’s take a look at function definition:
 

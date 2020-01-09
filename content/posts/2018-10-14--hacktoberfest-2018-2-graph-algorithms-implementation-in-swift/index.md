@@ -29,7 +29,7 @@ There are **two ways of representing graph** in computer:
 *2.* Adjacency-matrix
 
 Here is an example of graph (a) presented in adjacency-list (b) and adjacency-matrix (c):
-<re-img src="1.png"></re-img>
+<img src="https://i.imgur.com/Jwx6Kik.png" />
 
 I found that it’s better to use adjacency-matrix when the graph is dense (many edges), but if a graph is sparse, you’d better use adjacency-list.
 

@@ -10,13 +10,13 @@ I continue exploring and working on Lona as well as learning Swift and macOS dev
 
 ## Bug
 First of all, let me remind you how UI looks like in Lona:
-<img src="1.png" />
+<img src="https://i.imgur.com/F5qGFTv.png" />
 
 As you can see on the screenshot above, we have File Navigator on the left, Component Editor in the middle (please note that “Add” menu on top; it’s part of the issue), and Property Inspector on the right.
 
 The app had the following issue:
 When a user added, deleted or moved component files to a different location, the “Add” menu, which includes some UI elements and list of components in the current workspace that can be added to the selected component, wouldn’t update the list of components.
-<img src="2.png" />
+<img src="https://i.imgur.com/mAneVBU.png" />
 
 In order to update the list of components, the user had to restart the app, which, obviously, was quite annoying.
 
@@ -88,8 +88,8 @@ subscriptions.append(LonaPlugins.current.register(eventType: .onChangeFileSystem
 
 ## Results
 Here are some GIFs that shows the final results of my patch 🤠
-<img src="3.gif" />
-<img src="4.gif" />
-<img src="5.gif" />
+<img src="https://i.imgur.com/gzTdoH7.gif" />
+<img src="https://i.imgur.com/iTHE8zS.gif" />
+<img src="https://i.imgur.com/3S2cYR7.gif" />
 
 🔗 <a href="https://github.com/airbnb/Lona/pull/348" target="_blank" rel="noopener noreferrer">Pull request</a>

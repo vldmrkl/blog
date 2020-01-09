@@ -71,7 +71,7 @@ The process of installing VSCode locally, fixing the bug, debugging it, submitti
 Even though I had a good time working on VSCode, I wanted to switch back to Swift development, and I started searching for a new project. Again, I looked at major organizations, and I came across a project called Lona in Airbnb GitHub organization. Lona is a design tool, which lets users create and design components, and then generate code for different platforms like React and Swift. I liked the idea of this project a lot.
 
 I found that there were not many issues filed there, but I saw that there a lot of commits pushed every day, so I reached out to Devin (@dvnabbott), who is the maintainer of this project on Twitter:
-<img src="1.png" />
+<img src="https://i.imgur.com/eMEyqG8.png" />
 
 Devin was very kind and helpful, and he filed some issues in the repository. I fixed a couple of bugs, and I liked the process of working on Lona so much that I decided to work on it till the end of the semester, and maybe even more in the future! Also, I would like to mark the way that issues are filed there: they have amazing descriptions which help new contributors to start working on it quickly. I have sent four patches to Lona so far, and you can find more details about them in my previous posts.
 
@@ -79,14 +79,14 @@ Devin was very kind and helpful, and he filed some issues in the repository. I f
 This part was not really a part of my OSD course, however, I believe that OSD classes influenced me a lot, so I would like to share this story.
 
 I was scrolling my Twitter feed, and I came across this tweet:
-<img src="2.png" />
+<img src="https://i.imgur.com/TUDChvS.png" />
 
 I develop a lot using React, and I love this library a lot. I wanted to contribute to the React community, and it was a great opportunity to do it, so I applied for it. Shortly after it, the repository for Ukrainian translation was created, and I was assigned to maintain it 🤠
 
 It’s been a new and interesting experience for me because this time, I was not only a contributor but also a maintainer, who is responsible for helping others to start, reviewing their work, and even resolving conflicts. For example, we had two people submitting a translation for the same document, and I solved this issue by taking half of the translation from the first PR and the second half from the other PR.
 
 As of today, we have 100% of core documentation translated:
-<img src="3.png" />
+<img src="https://i.imgur.com/xvBPcZt.png" />
 
 The documentation website is already available online, so if you speak Ukrainian, check it out 😀
 

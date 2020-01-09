@@ -14,10 +14,10 @@ I really loved the idea of this project, so I chose it to be my next project for
 > If you’re interested in contributing or using it at your company, feel free to open a GitHub issue or get in touch with me on Twitter <a href="https://twitter.com/dvnabbott" target="_blank" rel="noopener noreferrer">@dvnabbott</a>. (Lona README)
 
 So I tweeted to Devin, who is maintaining this project:
-<img src="1.png" />
+<img src="https://i.imgur.com/JFJx3iY.png" />
 
 He was very kind and helped me to find a good first issue:
-<img src="2.png" />
+<img src="https://i.imgur.com/ULYXWvk.png" />
 
 Having some experience in open source development, I know how important communication between maintainers and contributors is. I believe that this is the key to building a community around the project and making people want to contribute more in the future. I appreciate his time and help a lot.
 
@@ -92,7 +92,7 @@ That’s it 😃
 
 ## Issue
 The welcome screen of Lona looks similar to XCode’s welcome screen, and the maintainers requested a feature, where pressing “Enter” key on the selected project would open that project. The only way to open the project was to double-click it.
-<img src="3.png" />
+<img src="https://i.imgur.com/kg0r6rp.png" />
 
 ## Implementation
 The issue description was very helpful, and it specified the file, which I should look at, and the function I should override.
@@ -122,7 +122,7 @@ if event.keyCode == carriageReturnKeyCode, tableView.selectedRow >= 0
 Next time, I’ll be more careful and try to catch possible crashes 😬
 
 Here is the end result of my contribution:
-<img src="4.gif" />
+<img src="https://i.imgur.com/T3UvpHf.gif" />
 
 ## Summary
 It was a nice experience contributing to this project, maintainers are welcome to contributors, and it’s one of the factors why I’m going to contribute more to this project. If you are interested too, check out <a href="https://github.com/airbnb/Lona" target="_blank" rel="noopener noreferrer">GitHub repository of Lona</a>.

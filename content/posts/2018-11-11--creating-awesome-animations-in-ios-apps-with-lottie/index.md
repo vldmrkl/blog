@@ -28,7 +28,7 @@ Animations can take your software’s design to the next level. Here are good li
 Adobe After Effects (AE) is a fantastic piece of software that helps you to build incredible animations. In order to use AE animations in Lottie, you should install BodyMovin plugin for AE, which converts your beautiful animations into JSON format.
 
 You can also find ready-to-use animations on <a href="https://lottiefiles.com/" target="_blank" rel="noopener noreferrer">LottieFiles</a>. For this tutorial, I am going to use a <a href="https://www.lottiefiles.com/2523-loading/" target="_blank" rel="noopener noreferrer">nice animation</a> I found there:
-<img src="1.gif" />
+<img src="https://i.imgur.com/Yklddmi.gif" />
 
 Now, let’s use Lottie and integrate the animation above into the iOS app. It should take you less than 3 minutes!<br />
 _1._ Create a single-view iOS application in Xcode.<br />
@@ -43,13 +43,13 @@ Add Lottie dependency to the cartfile: `github "airbnb/lottie-ios" "master"`. Th
 Next, in the General settings of the project add `lottie-ios.framework` file to the “Linked Frameworks and Libraries” settings.
 
 _3._ Add your animation JSON file to the folder with your project files (the folder that contains `ViewController`, `Main.storyboard`, etc) by drag and drop. Choose the following options:
-<img src="2.png" />
+<img src="https://i.imgur.com/NDsIQ0t.png" />
 
 _4._ To the main View, add a View that will contain your animation (I made it 300x300), and add class `LOTAnimationView` in the identity inspector:
-<img src="3.png" />
+<img src="https://i.imgur.com/crY3pYE.png" />
 
 _5._ Connect your Animation View to the `ViewController` (Press control + drag and drop the newly created Animation View to the `ViewController`).
-<img src="4.gif" />
+<img src="https://i.imgur.com/3Z4wwoI.gif" />
 
 _6._ Add the following line to the top of the `ViewController`:
 ```swift
@@ -93,7 +93,7 @@ override func viewDidLoad() {
 ```
 
 _9._ Build and run the app. <br />
-<img src="5.gif" />
+<img src="https://imgur.com/3RO26FT.gif" />
 
 ## Conclusion
 As you can see, it was pretty easy to integrate an After Effects animation to the iOS app thanks to Lottie. Just three lines of code that call Lottie’s `setAnimation`, `loopAnimation` and `play` do the magic, and you get a nice animation playing in your application.

@@ -11,7 +11,7 @@ It’s Friday, and it’s time for another story about my Open Source journey. I
 ## Bug
 The interface of Lona is really similar to Xcode’s interface, and it has three panels. One on the right, one on the left, and one in the bottom. The bottom panel contains some utilities such as parameters, logic, examples and details of the component, and for some reasons, the hide/show button in the navbar didn’t do anything. My goal was to implement this functionality.
 
-<img src="1.png" />
+<img src="https://i.imgur.com/yjtduPJ.png" />
 
 ## Fix
 In order to fix this bug, I made the following steps:<br />
@@ -74,6 +74,6 @@ private func setVisibility(to visible: Bool, for pane: WorkspacePane, animate: B
 
 ## Result
 As you can see in the GIF below, the bottom panel works properly when the hide/show button is clicked.
-<img src="2.gif" />
+<img src="https://i.imgur.com/DiyBxX4.gif" />
 
 🔗 <a href="https://github.com/airbnb/Lona/pull/374" target="_blank" rel="noopener noreferrer">Pull request</a>

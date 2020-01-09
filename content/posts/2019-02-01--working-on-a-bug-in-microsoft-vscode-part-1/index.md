@@ -8,7 +8,7 @@ author: Volodymyr Klymenko
 
 I’ve been looking for an issue to work on in big open source projects earlier this week, and I came across <a href="https://github.com/Microsoft/vscode" target="_blank" rel="noopener noreferrer">VSCode repo</a> on GitHub. I’ve never contributed to any Microsoft’s projects before, and I didn’t really think about doing that even though I use VSCode a lot. Every time I looked at the list of issues in VSCode repo, I thought it’s very hard to find a good one to work because it seemed to me that most of them are created by its users and not verified by project’s maintainers.
 
-<img src="1.png" />
+<img src="https://i.imgur.com/P9CdlzQ.png" />
 
 Writing a code that is not going to be accepted (or even reviewed) eventually is probably one of the saddest things in open source.
 
@@ -18,7 +18,7 @@ However, some of my peers in open source class have contributed to this project,
 
 First, for those of you who haven’t worked with VSCode before, let’s take a look at its interface:
 
-<img src="2.png" />
+<img src="https://i.imgur.com/h8K98k6.png" />
 
 If you take a look at Activity Bar (A), there are 5 sections:<br />
 _1._ File explorer<br />
@@ -31,7 +31,7 @@ The filed issue is about Extensions part of the Activity Bar, and the requested 
 > It would be helpful if the search bar in the Extensions Side Bar maintained its value when reloading the window. (<a href="https://github.com/Microsoft/vscode/issues/64669#issue-388952784" target="_blank" rel="noopener noreferrer">issue description</a>)
 
 ## Current behavior
-<img src="3.gif" />
+<img src="https://i.imgur.com/WQnFge2.gif" />
 
 Steps to reproduce this bug:<br />
 _1._ Type something in extensions search<br />

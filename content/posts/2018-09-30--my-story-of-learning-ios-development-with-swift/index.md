@@ -31,14 +31,14 @@ As for my Programming Project #1, I am developing a Concentration game for iOS. 
 My UI consists of 16 buttons, which represent game cards, 1 button to restart the game, and a label with count of flips made. Once user taps card, it flips up with an emoji. Then user should tap on second card, and if the cards have the same emoji, they will disappear from the screen. If selected cards have different emojis, user should proceed with finding a pair.
 This is how it looks:
 
-<re-img src="1.png"></re-img>
+<img src="https://i.imgur.com/sh6bHwM.png" />
 
 Let’s talk about architecture of the app. My project implements the Model-View-Controller design pattern, which is the most used design pattern in iOS apps. Here is the definition of MVC from Apple documentation:
 
 > The Model-View-Controller (MVC) design pattern assigns objects in an application one of three roles: model, view, or controller. The pattern defines not only the roles objects play in the application, it defines the way objects communicate with each other. Each of the three types of objects is separated from the others by abstract boundaries and communicates with objects of the other types across those boundaries. The collection of objects of a certain MVC type in an application is sometimes referred to as a layer — for example, model layer. (<a href="https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html" target="_blank" rel="noopener noreferrer">Apple</a>)
 
 Let’s take a look at my implementation of MVC in Concentration game:
-<re-img src="2.png"></re-img>
+<img src="https://i.imgur.com/wsnYWN3.png" />
 
 **View:**
 Main.storyboard basically contains 16 card buttons, “New Game” button, and a label.

@@ -63,8 +63,8 @@ After I forked and set up my local repository, the first thing I tried was build
 `pod install`
 
 After the dependencies were installed, I was able to build the project.
-<re-img src="1.png"></re-img>
-<re-img src="2.png"></re-img>
+<img src="https://i.imgur.com/sOv8I2g.png" />
+<img src="https://i.imgur.com/b8BAjAe.png" />
 
 Firstly, I had to install Alamofire to the project. I added Alamofire dependency in Podfile (file with all dependencies) by adding this line:<br />
 `pod 'Alamofire', '~> 4.7'`

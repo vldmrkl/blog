@@ -37,12 +37,12 @@ Neither of us is a designer, and we had to design the components ourselves. It w
 
 ### Inspiration
 I would like to mention some design works that influenced me when I designed my components:
-<img src="1.png" />
-<img src="2.png" />
+<img src="https://i.imgur.com/odxp9ok.png" />
+<img src="https://i.imgur.com/VSmM3Wm.png" />
 
 ## Set up
-When I started working on the set up of this project, I hoped that there is something like create-react-app but for creating React libraries. I found several tools: <a href="https://github.com/transitive-bullshit/create-react-library#readme" target="_blank" rel="noopener noreferrer">create-react-library</a> and <a href="https://github.com/insin/nwb" target="_blank" rel="noopener noreferrer">nwb</a>. I tried to use them, but none of them worked for me because my CSS files weren’t exported properly there. My component file structure looked like this:
-<img src="3.jpeg" />
+When I started working on the set up of this project, I hoped that there is something like create-react-app but for creating React libraries. I found several tools: <a href="https://github.com/transitive-bullshit/create-react-library#readme" target="_blank" rel="noopener noreferrer">create-react-library</a> and <a href="https://github.com/insin/nwb" target="_blank" rel="noopener noreferrer">nwb</a>. I tried to use them, but none of them worked for me because my CSS files weren’t exported properly there. My component file structure looked like this:<br />
+<img src="https://i.imgur.com/h4O1jbP.jpg" />
 
 It was clear to me that I had to use <a href="https://webpack.js.org/" target="_blank" rel="noopener noreferrer">webpack</a> to bundle my components into a module because this tool would let me configure my project as I want it to work. The only problem was that I hadn’t had any experience with webpack before. I had to learn how to use it and how to configure the project properly.
 
@@ -134,7 +134,7 @@ Also, I used <a href="https://babeljs.io/" target="_blank" rel="noopener norefer
 
 ## Components
 Here is what React Cupertino components look like as of today:
-<img src="4.png" />
+<img src="https://i.imgur.com/LYjAgxb.png" />
 
 ## React Cupertino Documentation
 You can learn more about each component and how to install React Cupertino to your project on the documentation website:

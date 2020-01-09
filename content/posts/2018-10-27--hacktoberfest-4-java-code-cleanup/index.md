@@ -27,7 +27,7 @@ The goals of the project:
 
 ## Architecture
 
-<img src="1.png" />
+<img src="https://i.imgur.com/AFSoTpm.png" />
 
 On the architecture above, you can see three main parts of the project:
 - Model selection & Autotuning (chooses an appropriate model and metric for provided data)
@@ -35,7 +35,7 @@ On the architecture above, you can see three main parts of the project:
 - An Anomaly Engine, which the runtime that accepts incoming metric streams from arbitrary time series metric source systems; classifies individual metric points as normal, weak anomalies or strong anomalies; and then passes them along to consumer systems such as alert management systems (for end users) and automated response systems (project’s Wiki);
 
 This is a more detailed version of the architecture:
-<img src="2.png" />
+<img src="https://i.imgur.com/1ui8RY6.png" />
 
 ## Issue
 The maintainer asked to remove Anomaly Validation module from the project because they have decided to move AV away from Adoptive Alerting’s pipeline. As usual, I asked to work on the issue. After I was welcomed to take it, I set up a project on my local machine, and built it by running:

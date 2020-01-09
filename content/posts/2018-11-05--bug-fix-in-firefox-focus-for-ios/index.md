@@ -22,7 +22,7 @@ Also, if you are into iOS development, or you are into open source development, 
 > Browse like no one’s watching. The new Firefox Focus automatically blocks a wide range of online trackers — from the moment you launch it to the second you leave it. Easily erase your history, passwords and cookies, so you won’t get followed by things like unwanted ads. (Retrieved from app’s description on App Store)
 
 Here are a few screenshots of this app:
-<img src="1.png" />
+<img src="https://i.imgur.com/A99DX6N.png" />
 
 > “Private browsing” on most browsers isn’t comprehensive or easy to use. Focus is next-level privacy that’s free, always on and always on your side — because it’s backed by Mozilla, the non-profit that fights for your rights on the Web. (Retrieved from app’s description on App Store)
 
@@ -38,7 +38,7 @@ _4._ Search “firefox”<br />
 _5._ Press back<br />
 _6._ **Search page shows** results for “**the guardian**” request, but URL Bar contains “**mozilla**” instead of “the guardian”.<br />
 
-<img src="bug.gif" />
+<img src="https://i.imgur.com/hei8nyL.gif" />
 
 ## Fix
 
@@ -56,7 +56,7 @@ _3._ `goForward()` — updates isCurrentSearch value for the stack’s objects.<
 _4._ `goBack()` — same as #3<br />
 
 When I was analyzing the code, I dismissed `pullSearchFromStack`, `goForward`, and `goBack` functions because they didn’t really deal with stack changes. Therefore, I started debugging `pushSearchToStack` function. I debugged several test cases, and let’s take a look at my findings.
-<img src="2.png" />
+<img src="https://i.imgur.com/IBhY9rf.png" />
 
 So I pretty much reproduced the bug described in the issue, and I found the problem:
 > When the last search is not the current search (like in the Stack after first “Go back” user action), and user makes a new search, the last search is not overridden with the new one (look at red line in the table above).
@@ -64,7 +64,7 @@ So I pretty much reproduced the bug described in the issue, and I found the prob
 > That is why when user goes back, URL Bar takes the old search text, which shouldn’t even be in the stack at that moment.
 
 Let’s take a look at a chunk of the pseudo code of `pushSearchToStack` function:
-<img src="3.png" />
+<img src="https://i.imgur.com/SB7jYfK.png" />
 
 Let’s take apart the code above:<br />
 _1._ It declares an empty stack currentStack. It sets the value of currentStack to the value of global state searchedHistory value.<br />
@@ -72,7 +72,7 @@ _2._ Then, it goes through each search in the stack, and sets value of isCurrent
 _3._ It adds the new search to the stack and sets its isCurrentSearch property to true.<br />
 
 So I played with the code a bit, and added a check whether the last search is the current search:
-<img src="4.png" />
+<img src="https://i.imgur.com/KOTzvwV.png" />
 
 If the last search is not the current search, it means that user clicked “back” button, and the currentStack removes its last element.
 
@@ -83,7 +83,7 @@ I tried to simulate the test case described above, and it worked as it supposed 
 **Even though it wasn’t right, it let me understand that I am on the right way.**
 
 So I evolved my code:
-<img src="5.png" />
+<img src="https://i.imgur.com/PJYXDvj.png" />
 
 Now, it checks whether the last search is the current search. If it is not the current search, it looks for the currentSearch in the stack and removes all the following searches from the stack.
 
@@ -92,7 +92,7 @@ Then, it adds a new search with the value of `isCurrentSearch` property to `true
 The whole contribution you can find in my <a href="https://github.com/mozilla-mobile/focus-ios/pull/1533" target="_blank" rel="noopener noreferrer">Pull Request</a>.
 
 Finally, let’s take a look at the fixed version of the browser.
-<img src="fix.gif" />
+<img src="https://i.imgur.com/pj9Po8Z.gif" />
 
 As you can see, the text in URL Bar matches the search page even if you go back and forward as many times as you want.
 

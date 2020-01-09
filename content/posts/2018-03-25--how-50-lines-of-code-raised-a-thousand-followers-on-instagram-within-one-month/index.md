@@ -1,10 +1,10 @@
 ---
 title: How 50 Lines of Code Raised a Thousand Followers On Instagram Within One Month
-cover: ig_phone.jpeg
+cover: cover.jpeg
 author: Volodymyr Klymenko
 ---
 
-<re-img src="ig_phone.jpeg"></re-img>
+<re-img src="cover.jpeg"></re-img>
 
 I am sure that even if you are not an active Instagram user posting pictures every day, and you just check the feed every day to see what’s new happened there in the world, you are likely to notice notifications from Instagram that someone you don’t know sent a request to follow you. It’s a common thing for social medias like Instagram, Twitter, etc.
 
@@ -26,7 +26,7 @@ Firstly, I was not going to create a whole app. Secondly, I was not sure that it
 In the Node.js server itself, I just called function #3 every hour. That’s it. Then, I took my old laptop which I did not use, and started running server there 24/7. Voilà! Everything worked as I assumed.
 
 Before I created my app, I had about 250 followers in my account. In 24 hours, I had almost 350. Almost 100 in a day! Actually, the activity was lower in next days, however, it still worked. Here is some statistics:
-<re-img src="stats.png"></re-img>
+<img src="https://i.imgur.com/UJLJV5x.png" />
 
 After running my app a little more than a month, I have more than 1,5k. Sometimes activity was low as my server was down because of bad network or laptop had no charge 😅 In average, I used to gain 50 followers every day. At the moment, numbers are lower because I have not changed the list of accounts I follow for a while.
 
@@ -54,7 +54,7 @@ From time to time, I edited this list and added other popular accounts of some e
 
 Let’s take a look at the users who requested to follow me:
 
-<re-img src="users.png"></re-img>
+<img src="https://i.imgur.com/RRPLXZW.png" />
 
 There were 3 major types of followers I was getting:
 

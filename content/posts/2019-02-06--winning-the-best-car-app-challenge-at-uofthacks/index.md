@@ -9,7 +9,7 @@ author: Volodymyr Klymenko
 Two weeks ago, I attended <a href="https://uofthacks.com/" target="_blank" rel="noopener noreferrer">UofTHacks</a> — a 36-hour <a href="https://mlh.io/" target="_blank" rel="noopener noreferrer">MLH</a> hackathon hosted by the University of Toronto. 500 students (about 100 teams) from Canada and the United States of America spent their weekend generating ideas and developing prototypes of their ideas. Teams could hack on whatever they wanted. There were prizes for top 3 hacks as well as prizes for sponsors’ challenges. I teamed up with my friends, whom I have met during my internship at Royal Bank of Canada. Our team consisted of one business person — Samana, and three devs — Miranda, Patricia, and myself.
 
 The opening ceremony took place on Friday evening, where organizers and sponsors welcomed all the hackers, and the UofTHacks VI officially started!
-<img src="1.jpeg" />
+<img src="https://i.imgur.com/AZqMGkp.jpeg" />
 
 Then we had chicken curry for dinner 😋🍛
 
@@ -46,7 +46,7 @@ We chose the make, model, year, current location and odometer value to be displa
 All of the metrics above, we calculate using the vehicle’s information from Smartcar API. Another idea was to display the location history of the car; we would implement this by tracking the car’s location periodically. It seemed like the dashboard can be its own application without “Tinder” functionality, so we put aside that idea and began developing the architecture of the project. In summary, our project was supposed to use **Python Flask** for the back-end, **React** for front-end, **Microsoft Azure Cosmos DB**, some other Microsoft services such as **Microsoft Bing** image search, and all of that would be deployed to **Azure cloud**. As you can notice, there are many Microsoft Azure products in our architecture. Actually, none of us had much experience with Azure, but we decided to try using it because we wanted to participate in Microsoft’s challenge for the best use of Azure services.
 
 After architecture was done, we started prototyping the UI of a web app.
-<img src="2.png" />
+<img src="https://i.imgur.com/feBwbdO.png" />
 
 Samana and I worked on it, and we designed the following workflow:<br />
 _1._ **Login page**. Here, the user would be prompted to authenticate themselves on the Smartcar Authorization Dialog<br />
@@ -64,12 +64,12 @@ First, I learned Smartcar docs in order to find out how to start. As we were bui
 The instructions are pretty straight forward, and they also provide a <a href="https://github.com/smartcar/getting-started-javascript-sdk-react" target="_blank" rel="noopener noreferrer">starter kit</a>.
 
 In less than an hour, I had my basic app set up, and this app could authenticate users with Smartcar Authorization Dialog. Let’s take a look at the architecture of our newly created Single Page App:
-<img src="3.png" />
+<img src="https://i.imgur.com/emM9byR.png" />
 
 Thanks to the starter kit, I saved my time from implementing the following architecture in my app, and I could focus on building UI instead.
 
 I started implementing UI of our Login page. It didn’t take long to develop Login page as it basically consists of a logo, description and a button. Here is how our login page looked like eventually:
-<img src="4.png" />
+<img src="https://i.imgur.com/S8jCER8.png" />
 
 Then I moved forward to the next step, which was the **Dashboard**. While our back-end was still in development, I was building a static version of the dashboard. _Because of limited time, I didn’t really try to write beautiful code; instead, I focused on writing code that works_. In order to save time, I also didn’t break UI into a component hierarchy. Most of the code I wrote was inside my page components: `Home.jsx` and `Dashboard.jsx`.
 
@@ -78,12 +78,12 @@ _1._ Vehicle information section, which includes its make, model, year, total mi
 _2._ Statistics section, which displays location timeline and mileage based on selected time filter (past 24 hours/past week), and environmental impact metrics.
 
 This is how the dashboard with static values looked like:
-<img src="5.png" />
+<img src="https://i.imgur.com/5cHfxhP.png" />
 
 Once I had developed the dashboard with static values, the majority of the endpoints in the back-end were implemented. Therefore, I could start replacing the hardcoded labels with data retrieved from Smartcar API.
 
 The following screenshot is the final version of the dashboard, which displays data dynamically.
-<img src="6.png" />
+<img src="https://i.imgur.com/dlNj4A0.png" />
 
 Some of the values are random there such as location history and mileage for the past 24 hours/week because we basically didn’t have enough time to collect that data. Everything else is calculated or received from Smartcar API. Let’s take a closer look at each section.
 
@@ -123,11 +123,11 @@ Finally, we were done, and we had roughly 3 hours for sleep before judging start
 
 ## Presentations
 After 36 hours of hacking, 100 teams had submitted their projects. So many different and smart ideas were presented there!
-<img src="7.jpeg" />
+<img src="https://i.imgur.com/JkKO8el.jpeg" />
 
 Judging started on Sunday at 10.30 a.m. and our team had an amazing opportunity to pitch our product to representatives from Microsoft, Royal Bank of Canada, Smartcar, Intel, Rogers, and others.
 
-<img src="7.jpeg" />
+<img src="https://i.imgur.com/CyLgrFO.jpeg" />
 
 After 2 hours, we had presented our project about 25 times. Such a great experience!
 

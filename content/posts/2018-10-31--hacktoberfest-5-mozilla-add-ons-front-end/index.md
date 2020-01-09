@@ -11,12 +11,12 @@ My fifth contribution for Hacktoberfest was done in <a href="https://github.com/
 > <a href="https://addons.mozilla.org/en-US/firefox/" target="_blank" rel="noopener noreferrer">Addons.mozilla.org</a> (AMO), is Mozilla’s official site for discovering and installing add-ons for the Firefox browser. Add-ons help you modify and personalize your browsing experience by adding new features to Firefox, enhancing your interactions with Web content, and changing the way your browser looks. (Retrieved AMO website)
 
 Add-ons, also called extensions, have their own page with a description, rating, downloads stats, screenshots:
-<img src="1.png" />
+<img src="https://i.imgur.com/Hx2LoFz.png" />
 
 I came across an <a href="https://github.com/mozilla/addons-frontend/issues/6755" target="_blank" rel="noopener noreferrer">issue that required to remove outline from Rating stars</a> when selected on Chrome.
 
 Here is a screenshot of how it used to work before I came to the project:
-<img src="2.png" />
+<img src="https://i.imgur.com/LUulZke.png" />
 
 It is a default behaviour for Chrome. As I worked with front-end a lot, I fixed this problem so many times by adding the following line to CSS:
 ```css

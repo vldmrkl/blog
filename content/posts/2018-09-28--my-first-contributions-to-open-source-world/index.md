@@ -1,10 +1,10 @@
 ---
 title: 'My First Contributions to Open-Source World'
-cover: world.jpeg
+cover: cover.jpeg
 author: Volodymyr Klymenko
 ---
 
-<re-img src="world.jpeg"></re-img>
+<re-img src="cover.jpeg"></re-img>
 
 If you aspire to work on an open-source project, but you have no experience at all, this article is going to be extremely helpful for you. After reading this story, you will be familiar with the primary steps of contributing to open-source projects.
 
@@ -44,13 +44,13 @@ So my goal was to add some tests for promise based API. From my research, I foun
 Now let’s go through the process of setting up the repository on the local machine:
 
 *1.* Fork the repository you want to work with by clicking “Fork” button in the upper-right corner.
-<re-img src="1.png"></re-img>
+<img src="https://i.imgur.com/FhkeIsD.png" />
 
 *2.* Now, if you go to your profile’s repositories, you will see the repository you’ve forked, and there will be label “forked from …”.
-<re-img src="2.png"></re-img>
+<img src="https://i.imgur.com/lLlCA7E.png" />
 
 *3.* Copy the link from “Clone or download” button
-<re-img src="3.png"></re-img>
+<img src="https://i.imgur.com/wBaWra0.png" />
 
 and execute git clone command with your link, in my case it was:<br />
 `git clone https://github.com/klymenkoo/filer.git`
@@ -85,7 +85,7 @@ So I wanted to have the same tests for *promise* version of *mkdir*, and I also 
 - *should return Promise*
 
 And here are the new tests for *fs.promise.mkdir*:
-<re-img src="4.png"></re-img>
+<img src="https://i.imgur.com/7ZYcPcs.png" />
 
 After I finished my tests, I ran <br />
 `npm test`
@@ -110,10 +110,10 @@ Where -m “…” specifies commit’s message.
 `git push origin`
 
 *4.* Go to the original repository on GitHub, and create Pull Request by clicking “New pull request” button in “Pull requests” tab.
-<re-img src="5.png"></re-img>
+<img src="https://i.imgur.com/sq2NmKC.png" />
 
 *5.* Select the branch you want to merge your code with(probably, master in original repo), and select the branch you want to pull code from (branch from your forked repo):
-<re-img src="6.png"></re-img>
+<img src="https://i.imgur.com/cPZS3wE.png" />
 
 *6.* Click “Create pull request”.
 

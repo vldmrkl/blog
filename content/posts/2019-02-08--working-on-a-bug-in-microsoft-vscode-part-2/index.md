@@ -10,7 +10,7 @@ One week ago, I posted an article on how I started working on a bug in Microsoft
 
 ## Quick Recap
 The search bar in the extensions part doesn’t save the value if you reload the window.
-<img src="1.gif" />
+<img src="https://i.imgur.com/Nd0sY2E.gif" />
 
 Steps to reproduce this bug:<br />
 _1._ Type something in extensions search<br />
@@ -48,7 +48,7 @@ I found that `options` parameter consists of
 and the input parameters are assigned to these `options`.
 
 I tried to add value to the `SuggestEnabledInputOptions` interface, and pass a “test” string in the `extensionsViewlet`. Voilà! Each time `searchBox` is rendered, the default value is “test”:
-<img src="2.png" />
+<img src="https://i.imgur.com/xZ4sodI.png" />
 
 A small milestone was completed. Now, my task was to keep track of the value and save it inside the state.
 
@@ -69,10 +69,10 @@ protected saveState(): void {
 ```
 
 Finally, I used the value from the `searchViewletState` in the `extensionsViewlet` create method and passed to the `searchBox` constructor inside `options` object (last line):
-<img src="3.png" />
+<img src="https://i.imgur.com/yio0CVt.png" />
 
 Here is the result:
-<img src="4.gif" />
+<img src="https://i.imgur.com/nhbuzkg.gif" />
 
 As you can see, I type “**react**" in the `searchBar`. Then, I reload the window, and the ``searchBar`` has a value of “**react**”!
 

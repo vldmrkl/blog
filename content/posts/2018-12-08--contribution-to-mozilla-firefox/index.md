@@ -54,7 +54,7 @@ After the local environment is set up, I could start hacking on the issue. I rem
 ```
 
 Here is the output I got:
-<img src="1.gif" />
+<img src="https://i.imgur.com/QPjnwnt.gif" />
 
 **ESLint caught about 500 errors!**
 
@@ -114,7 +114,7 @@ In order to send my patch to the Phabricator, I had to install <a href="https://
 > You must have Python 2.7 installed, and preferably in your path.
 
 When you go to the latest release, you see:
-<img src="2.png" />
+<img src="https://i.imgur.com/ByYKVyW.png" />
 
 I didn’t really know what I had to download. Should I download source code or just moz-phab file? I know that some of my classmates also found it confusing.
 

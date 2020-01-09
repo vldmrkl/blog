@@ -134,7 +134,7 @@ _2._ `vapor run`
 A default port is `8080`.
 
 I use <a href="https://www.getpostman.com/" target="_blank" rel="noopener noreferrer">Postman</a> to test my APIs during the development. Here is my request to the newly created endpoint:
-<img src="1.png" />
+<img src="https://i.imgur.com/k5Mwon0.png" />
 
 I sent a POST request with the request body (that you can see on the screenshot above). You can see the successful response with status 200 in the bottom right corner.
 
@@ -158,7 +158,7 @@ router.get("users") { req -> [String] in
 First few lines are pretty similar to what we’ve done in the first `POST` method (note that I use `router.get` instead of `router.post`). Next, I use a `find()` method of the collection instance, which returns a mongo cursor that is being used for working with documents in the database. Note, you can pass a filter query as a parameter of `find()` if you need to search for a specific document.
 
 Then, I iterate documents in the cursor, and push a username property of each document into my `usernames` string array. Finally, I return the `usernames`, and let’s take a look at the output from my **GET** request:
-<img src="2.png" />
+<img src="https://i.imgur.com/4ormgUO.png" />
 
 The request returned `volodymyr` user, which had been added earlier.
 
@@ -184,12 +184,12 @@ Then, I create a `query` of MongoSwift’s `Document` type, which is, basically,
 After that, I simply call `collection.updateOne` with the `filter: query` and `update: updatedUser` arguments. This line of code will look for a user with specified id, and update the username and password of that user.
 
 Let’s test it! I’m going to send a **PUT** request with the following request body:
-<img src="3.png" />
+<img src="https://i.imgur.com/43mYoPV.png" />
 
 Here, I’m using an id of the user I’ve created earlier, but I’m using a new username and a new password. I got a successful response from the server (see right bottom corner) after sending this request.
 
 Now, the updated username should be `volodymyr10` now instead of just `volodymyr`, and the user should have a new password: `newPassword`. Let’s send a GET request to `http://localhost:8080/users` in order to confirm that user’s info was updated:
-<img src="4.png" />
+<img src="https://i.imgur.com/Bo0CgI6.png" />
 
 It returned an updated username.
 
@@ -212,12 +212,12 @@ This code is almost the same as our `router.put` function but a little bit simpl
 Lastly, I call `collection.deleteOne` with the `query` I’ve made. It will look for a document that has that user id and delete it from the database.
 
 Time to test it! First, I want to add some more users to the database. I’ve sent a couple of POST requests with the new users, and here is a new list of users:
-<img src="5.png" />
+<img src="https://i.imgur.com/5XebWOA.png" />
 
 Now, let’s try to delete `volodymyr10` user. I’m sending a **DELETE** request to `http://localhost:8080/user/1`:
-<img src="6.png" />
+<img src="https://i.imgur.com/B0DPskj.png" />
 
 I got a successful response with status 200 (see the bottom right corner). Let’s see the list of users now:
-<img src="7.png" />
+<img src="https://i.imgur.com/VC2H8JX.png" />
 
 User `volodymyr10` is gone!

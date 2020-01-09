@@ -12,7 +12,7 @@ As you might know, I’ve decided to proceed with making more contributions to <
 Users often create new components based on the existing ones, and the only way to do it was to go to Finder and copy & paste a component file. So, there was a feature request to add component duplication support to the File Navigator.
 
 First, let’s take a look at the context menu of the file in File Navigator:
-<img src="1.png" />
+<img src="https://i.imgur.com/wqjU2zJ.png" />
 
 My task was to add a new option called “Duplicate As…” to the context menu, and once the option was selected, it should display the Save dialog. After the user typed a file name, selected location for it and pressed “Save”, the program should open a newly created component in the Component Editor.
 
@@ -55,6 +55,6 @@ if NSURL(fileURLWithPath: path).pathExtension == "component" {
 ```
 
 ## Result
-<img src="2.gif" />
+<img src="https://i.imgur.com/Voq2HXd.gif" />
 
 🔗 <a href="https://github.com/airbnb/Lona/pull/359" target="_blank" rel="noopener noreferrer">Pull request</a>
