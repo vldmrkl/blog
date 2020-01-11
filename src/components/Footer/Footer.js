@@ -9,8 +9,29 @@ const Footer = props => {
   return (
     <React.Fragment>
       <footer className="footer">
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/klymenko_v/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </a>
+          </li>
+          <li>•</li>
+          <li>
+            <a
+              href="https://www.github.com/vldmrkl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </li>
+        </ul>
         <a
-          href="https://www.github.com/klymenkoo/blog/"
+          href="https://www.github.com/vldmrkl/blog/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -29,12 +50,28 @@ const Footer = props => {
           position: absolute;
           bottom: 0;
           width: 100%;
-          height: 60px;
+
+          display: flex;
+          flex-direction: column;
+
+          ul li {
+            display: inline;
+            font-size: ${theme.font.size.m};
+            padding: 0 0.3em;
+
+            a {
+              color: ${theme.color.brand.primary};
+              font-weight: bold;
+              text-decoration: underline;
+            }
+
+            a:hover {
+              text-decoration: none;
+            }
+          }
 
           a:hover {
             color: ${theme.color.brand.primary};
-            font-weight: bold;
-            text-decoration: underline;
           }
         }
       `}</style>
