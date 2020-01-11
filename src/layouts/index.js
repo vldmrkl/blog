@@ -62,10 +62,6 @@ class Layout extends React.Component {
       <ThemeContext.Provider value={this.state.theme}>
         <ScreenWidthContext.Provider value={this.state.screenWidth}>
           <div className="highest-container">
-            <Header
-              path={this.props.location.pathname}
-              theme={this.state.theme}
-            />
             <main>{children}</main>
             <Footer theme={this.state.theme} />
           </div>

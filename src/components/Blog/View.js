@@ -4,6 +4,8 @@ import Hero from '../Hero';
 import Blog from './Blog.js';
 import Pagination from './Pagination';
 import { InfiniteScroll } from './InfiniteScroll';
+import config from '../../../content/meta/config';
+import avatar from '../../images/jpg/avatar.jpg';
 
 /** Template for "home" page with infinite scroll and fallback to pagination. */
 class View extends React.Component {
@@ -29,6 +31,21 @@ class View extends React.Component {
     return (
       <React.Fragment>
         {/* Blog posts with infinite scroll. */}
+        <div className="blog-header">
+          <img
+            className="logo"
+            src={config.gravatarImgMd5 == '' ? avatar : config.gravatarImgMd5}
+            alt={config.siteTitle}
+          />
+
+          <div className="blog-info">
+            <h1>vldmrkl.com</h1>
+            <p className="desc">
+              A blog about about JavaScript, React and Swift by Volodymyr
+              Klymenko, a software developer based in Toronto, Ontario.
+            </p>
+          </div>
+        </div>
         <InfiniteScroll
           throttle={300}
           threshold={600}
@@ -63,6 +80,42 @@ class View extends React.Component {
               transform: rotate(360deg);
             }
           }
+
+          .blog-header {
+            display: flex;
+            margin: 0 auto;
+            margin-top: 5%;
+            max-width: 700px;
+            padding: 0 ${theme.space.inset.default};
+          }
+
+          .desc {
+            margin-top: 1%;
+          }
+
+          .blog-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 5%;
+
+            h1 {
+              cursor: pointer;
+            }
+
+            h1:hover {
+              color: ${theme.color.brand.primaryDark};
+            }
+          }
+
+          .logo {
+            border-radius: 50%;
+            object-fit: cover;
+            margin: ${theme.space.inline.default};
+            height: 5em;
+            width: 5em !important;
+          }
+
           .spinner {
             margin-top: 40px;
             font-size: 60px;

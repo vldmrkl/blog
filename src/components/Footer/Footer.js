@@ -9,8 +9,12 @@ const Footer = props => {
   return (
     <React.Fragment>
       <footer className="footer">
-        <a href="https://www.github.com/klymenkoo/blog/">
-          This blog is open source. Last updated {buildTime}.
+        <a
+          href="https://www.github.com/klymenkoo/blog/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          This blog is open source. Last updated: {buildTime}.
         </a>
       </footer>
 
@@ -26,6 +30,12 @@ const Footer = props => {
           bottom: 0;
           width: 100%;
           height: 60px;
+
+          a:hover {
+            color: ${theme.color.brand.primary};
+            font-weight: bold;
+            text-decoration: underline;
+          }
         }
       `}</style>
     </React.Fragment>

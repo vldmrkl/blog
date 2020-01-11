@@ -25,6 +25,9 @@ const Post = props => {
 
   return (
     <React.Fragment>
+      <a href="https://vldmrkl.com/">
+        <h1>vldmrkl.com</h1>
+      </a>
       <header>
         <Headline title={title} theme={theme} />
         <Meta
@@ -39,6 +42,16 @@ const Post = props => {
         {/*<Author note={authornote} theme={theme} /> */}
         <NextPrev next={nextPost} prev={prevPost} theme={theme} />
       </footer>
+      <style jsx>{`
+        h1 {
+          cursor: pointer;
+          margin-bottom: 1em;
+        }
+
+        h1:hover {
+          color: ${theme.color.brand.primaryDark};
+        }
+      `}</style>
     </React.Fragment>
   );
 };
