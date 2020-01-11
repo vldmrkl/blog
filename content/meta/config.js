@@ -2,7 +2,7 @@ module.exports = {
   siteTitle: 'Volodymyr Klymenko', // <title>
   shortSiteTitle: 'Volodymyr Klymenko', // <title> ending for posts and pages
   siteDescription: 'Volodymyr Klymenko',
-  siteUrl: 'https://klymenko.com',
+  siteUrl: 'https://vldmrkl.com',
   // pathPrefix: "",
   siteImage: 'preview.jpg',
   siteLanguage: 'en',
@@ -10,11 +10,11 @@ module.exports = {
   /* author */
   authorName: 'Volodymyr Klymenko',
   authorTwitterAccount: 'https://twitter.com/klymenko_v',
-  authorGithub: 'https://github.com/klymenkoo',
+  authorGithub: 'https://github.com/vldmrkl',
   authorStackoverflow: '',
   authorLinkedin: 'https://www.linkedin.com/in/volodymyr-klymenko/',
   authorCodeforces: '',
-  authorYoutube: '',
+  authorYoutube: 'https://www.youtube.com/user/VKDP2014/videos',
 
   /* header text */
   headerTitle: 'Volodymyr Klymenko',
