@@ -123,7 +123,7 @@ Here is the pseudocode of the algorithm (from: Introduction to Algorithms):
 
 ```c
 BFS(G, s)
-for each vertex u ∈ G.V  - {s}
+for each vertex u ∈ G.V - {s}
    u.color = WHITE
    u.d = ∞
    u.π = NIL
