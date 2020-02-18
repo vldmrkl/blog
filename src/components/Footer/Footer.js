@@ -29,6 +29,16 @@ const Footer = props => {
               GitHub
             </a>
           </li>
+          <li>•</li>
+          <li>
+            <a
+              href="https://vldmrkl.com/rss.xml"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              RSS
+            </a>
+          </li>
         </ul>
         <a
           href="https://www.github.com/vldmrkl/blog/"
