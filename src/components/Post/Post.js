@@ -25,8 +25,8 @@ const Post = props => {
 
   return (
     <React.Fragment>
-      <a href="https://vldmrkl.com/">
-        <h1>vldmrkl.com</h1>
+      <a href="https://blog.vldmrkl.com/">
+        <h1>blog.vldmrkl.com</h1>
       </a>
       <header>
         <Headline title={title} theme={theme} />

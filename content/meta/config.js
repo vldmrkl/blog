@@ -3,7 +3,7 @@ module.exports = {
   shortSiteTitle: 'A blog by Volodymyr Klymenko', // <title> ending for posts and pages
   siteDescription:
     'A blog about JavaScript, React and Swift by Volodymyr Klymenko, a software developer based in Toronto, Ontario.',
-  siteUrl: 'https://vldmrkl.com',
+  siteUrl: 'https://blog.vldmrkl.com',
   // pathPrefix: "",
   siteImage: 'preview.jpg',
   siteLanguage: 'en',

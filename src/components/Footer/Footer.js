@@ -32,7 +32,7 @@ const Footer = props => {
           <li>•</li>
           <li>
             <a
-              href="https://vldmrkl.com/rss.xml"
+              href="https://blog.vldmrkl.com/rss.xml"
               target="_blank"
               rel="noopener noreferrer"
             >

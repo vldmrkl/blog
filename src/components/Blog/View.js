@@ -39,7 +39,7 @@ class View extends React.Component {
           />
 
           <div className="blog-info">
-            <h1>vldmrkl.com</h1>
+            <h1>blog.vldmrkl.com</h1>
             <p className="desc">
               A blog about JavaScript, React and Swift by Volodymyr Klymenko, a
               software developer based in Toronto, Ontario.
