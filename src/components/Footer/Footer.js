@@ -40,13 +40,7 @@ const Footer = props => {
             </a>
           </li>
         </ul>
-        <a
-          href="https://www.github.com/vldmrkl/blog/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          This blog is open source. Last updated: {buildTime}.
-        </a>
+        <p>© 2020 Volodymyr Klymenko</p>
       </footer>
 
       {/* --- STYLES --- */}
