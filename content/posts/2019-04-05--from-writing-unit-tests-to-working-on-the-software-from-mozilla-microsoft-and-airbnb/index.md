@@ -1,5 +1,5 @@
 ---
-title: From Writing Unit Tests To Working On the Software From Mozilla, Microsoft And Airbnb
+title: 'My OSS Journey: From Writing Unit Tests To Working On the Software From Mozilla, Microsoft And Airbnb'
 cover: cover.jpg
 author: Volodymyr Klymenko
 ---
